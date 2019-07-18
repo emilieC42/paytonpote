@@ -1,0 +1,24 @@
+{{ form_start(form) }}
+<div class="input-field col s12 l7">
+    {{ form_label(form.name, 'Votre nom') }}
+    {{ form_widget(form.name) }}
+</div>
+<div class="input-field col s12 l5">
+    {{ form_label(form.goal, 'Votre objectif en euros') }}
+    {{ form_widget(form.goal) }}
+</div>
+<div class="input-field col s12 l12">
+    {{ form_label(form.title, 'Titre de votre campagne') }}
+    {{ form_widget(form.title) }}
+</div>
+<div class="input-field col s12 l12">
+    {{form_widget(form.content)}}
+</div>
+
+<button class="btn btn-large waves-effect waves-light pink lighten-1 col s12" name="action" style="margin-top: 20px;" type="submit">
+    Validez la campagne
+    <i class="material-icons right">send</i>
+</button>
+{{ form_end(form) }}
+
+

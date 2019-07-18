@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Campaign
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h4>Créez votre campagne maintenant</h4>
+        <div class="card">
+            <div class="card-content">
+                <div class="row">
+                    {{ include('campaign/_form.html.twig') }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
